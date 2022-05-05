@@ -34,7 +34,7 @@ def Install(包名):
 截图并且保存到响应的路径下
 '''
 def Snapshot():
-    snapshot(filename='util/map', msg='', quality=3)
+    snapshot(filename='/Users/liwen/UIAirTest/util', msg='是否存在')
 
 """双击"""
 def Doublelick(双击):
@@ -64,5 +64,3 @@ def radom_date_time():
 """随机生成一个ipv4的地址"""
 def random_ipv4():
     return fk.ipv4()
-
-

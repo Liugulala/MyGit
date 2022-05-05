@@ -23,7 +23,6 @@ class E_Private():
     setting_Private=poco(name="com.pointone.buddyglobal.alpha:id/setting")#设置按钮
     logout_Private=poco(name="com.pointone.buddyglobal.alpha:id/logOutLayout")#退出入口
     setting_Privatee=poco(name="com.pointone.buddyglobal.alpha:id/setting")#确认按钮弹窗
-    Yes_Private=poco(text="Yes")#yes
-    NO_Private=poco(text="NO")#no
-
+    Yes_Private=poco(text="Yes")#Yes
+    NO_Private=poco(text="NO")#No
 

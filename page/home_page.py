@@ -5,27 +5,28 @@ from conf.Home_conf import E_home
 from util.screenshot_util1 import *
 from util.find_element_util1 import *
 #app登录
-def login(dengl):
-    button=E_login.button
-    loginTest=E_login.loginTest
-    logong=E_login.googl_login
-    if loginTest:
-        E_logint=E_login.google
-        E_logint.click()
-    elif button:
-        wE_login=E_login.button
-        wE_login.click()
-        pass
-    return login
+def login(denglu):
+    return
 
 #退出登录
 def Exit():
-    E_home.head_home.click()
-    E_Private.setting_Private.click()
-    E_Private.logout_Private.click()
-    snapshot(Filename='123',msg="登录")
-    E_Private.Yes_Private.click()
+    return
+
+#进入banner地图详情
+def HomeExperirnce():
+    E_home.View_home.click()
+    return HomeExperirnce()
+
+#创建房间
+def Experirnceroom():
+    if E_home.download_Experirnce:
+        E_home.download_Experirnce.click()
+        error
+        return
+    else :
+        E_home.joinPublicRoompoco_Experirnce.click()
+        return
 
 
-login(E_app.master)
+
 
