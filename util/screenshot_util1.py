@@ -14,13 +14,18 @@ def take_screenshot(driver, SCREENSHOT_PATH=None):
     if not os.path.exists(dir):
         os.makedirs(dir)
     # 以当前时间为文件名
+
     file_name = get_chinese_time()
-    file_path = os.path.join(dir, file_name+".png")
+    map = os.path.join(dir, file_name + ".png")
     try:
-        driver.get_screenshot_as_file(file_path)
+        driver.get_screenshot_as_file(map)
         # 返回截图文件的绝对路径
-        return file_path
+        return map
     except:
-        print("截图发生异常【{}】".format(file_path))
+        print("截图发生异常【{}】".format(map))
         traceback.print_exc()
-        return file_path
+        return map
+
+
+take_screenshot()
+print(11)

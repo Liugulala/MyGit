@@ -1,4 +1,3 @@
-from conf.module import *
 #首页元素
 from conf.module import poco
 class E_home():
@@ -32,4 +31,9 @@ class E_home():
     '''----------------------------------------------------------'''
     #进房
 
-
+try:
+    a = poco(name="bcom.pointone.buddyglobal.debug:id/download")
+    a.click()
+except(IOError, NameError)as e:
+    # 如果想通过一次except捕获到多个异常可以用一个元组的方式
+    print('捕获到异常信息:', e)
