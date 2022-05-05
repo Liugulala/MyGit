@@ -1,11 +1,8 @@
 # 登录页面元素的元素对象及操作
 # -*- encoding=utf8 -*-
-from conf.By_Element_conf import *
-from conf.Home_conf import E_home
-from util.screenshot_util1 import *
 from util.find_element_util1 import *
 #app登录
-def login(denglu):
+def login():
     return
 
 #退出登录
@@ -22,7 +19,8 @@ def Experirnceroom():
     if E_home.download_Experirnce:
         E_home.download_Experirnce.click()
         return
-    else :
+
+    else:
         E_home.joinPublicRoompoco_Experirnce.click()
         return
 
