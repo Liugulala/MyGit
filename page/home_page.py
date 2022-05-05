@@ -26,11 +26,6 @@ def Exit():
     snapshot(Filename='123',msg="登录")
     E_Private.Yes_Private.click()
 
-def Room():
-    return
 
-#login(E_login.googl_login.click())
-#Exit()
-Stopapp(E_app.master)
-Startapp(E_app.master)
-login(E_login.facebook_login)
+login(E_app.master)
+

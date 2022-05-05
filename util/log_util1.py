@@ -1,13 +1,14 @@
 #日志
 import logging
 import logging.config
-from conf.global_var import *
+from conf.module import *
 
-
-# 日志配置文件：多个logger，每个logger指定不同的handler
-# handler：设定了日志输出行的格式
-#          以及设定写日志到文件（是否回滚）？还是到屏幕
-#          还定了打印日志的级别
+'''''
+日志配置文件：多个logger，每个logger指定不同的handler
+handler：设定了日志输出行的格式
+          以及设定写日志到文件（是否回滚）？还是到屏幕
+          还定了打印日志的级别
+'''
 logging.config.fileConfig()
 logger = logging.getLogger("example01")
 

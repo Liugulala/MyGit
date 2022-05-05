@@ -1,13 +1,13 @@
 __author__ = "liwen"
 from airtest.core.api import *
 from poco.drivers.android.uiautomation import AndroidUiautomationPoco#安卓
-
+from faker import Faker
 from conf.Home_conf import E_home
-
 poco = AndroidUiautomationPoco(use_airtest_input=True, screenshot_each_action=False)#安卓
 #------------------------------------
 from conf.By_Element_conf import *
-##################app启动相关############################
+
+fk = Faker(locale='zh_CN')
 # app启动
 def Startapp(包名):
     start_app(包名)
@@ -29,14 +29,14 @@ def Install(包名):
     install(filepath="要在目标设备上安装的文件的路径")
     return Install
 
-##################点击操作############################
-
-'''#截图并且保存到响应的路径下
-def Snapshot():
-    snapshot(filename='1.jpg', msg='hello', quality=3)
-待研究用法
 '''
-#双击
+点击操作
+截图并且保存到响应的路径下
+'''
+def Snapshot():
+    snapshot(filename='util/map', msg='', quality=3)
+
+"""双击"""
 def Doublelick(双击):
     double_click(双击)
     return Doublelick()
@@ -46,16 +46,23 @@ def Doublelick(双击):
 def Swipe(v1,v2):
     swipe(v1,v2)
 '''
-#输入文本
+
+"""输入文本"""
 def Text():
     text()
     return Text
 
-##################等待############################
+"""定位元素"""
 def Exists(定位元素):
     os.path.exists(定位元素)
     return Exists
 
-Doublelick(E_home.propsicon)
+"""随机生成一个时间"""
+def radom_date_time():
+    return fk.date_time()
 
-#assert("com.pointone.buddyglobal.alpha:id/headImage")
+"""随机生成一个ipv4的地址"""
+def random_ipv4():
+    return fk.ipv4()
+
+

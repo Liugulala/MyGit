@@ -11,7 +11,7 @@ class E_home():
     inform_home = poco(name="com.pointone.buddyglobal.alpha:id/notificationIcon")#通知
     '''----------------------------------------------------------'''
     #首页地图
-
+    banner_home = poco(name="com.pointone.buddyglobal.alpha:id/cslMapCover")
     #banner
     '''----------------------------------------------------------'''
     #首页底部tab
