@@ -21,7 +21,6 @@ def HomeExperirnce():
 def Experirnceroom():
     if E_home.download_Experirnce:
         E_home.download_Experirnce.click()
-        error
         return
     else :
         E_home.joinPublicRoompoco_Experirnce.click()

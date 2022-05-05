@@ -24,7 +24,7 @@ class E_home():
     IMIcon = poco(name="com.pointone.buddyglobal.alpha:id/chatIcon")  # IM
 
     '''----------------------------------------------------------'''
-    #地图详情
+    #地图详情。
     download_Experirnce = poco(name="com.pointone.buddyglobal.alpha:id/download")#地图未渲染过
     joinPublicRoompoco_Experirnce=poco(name="com.pointone.buddyglobal.alpha:id/joinPublicRoom")#创建公共房间
     joinPrivateRoom_Experirnce=poco(name="com.pointone.buddyglobal.alpha:id/joinPrivateRoom")#创建私人房间
