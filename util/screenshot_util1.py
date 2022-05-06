@@ -1,12 +1,10 @@
-#截图存储
+# 截图存储
 import traceback
-import os
-from util.excel_util1 import *
 from conf.module import *
-
 
 # 截图函数
 from util.datetim_util1e import get_chinese_date, get_chinese_time
+
 
 def take_screenshot(driver, SCREENSHOT_PATH=None):
     # 创建当前日期目录
@@ -26,6 +24,3 @@ def take_screenshot(driver, SCREENSHOT_PATH=None):
         traceback.print_exc()
         return map
 
-
-take_screenshot()
-print(11)

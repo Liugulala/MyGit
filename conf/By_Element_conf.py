@@ -1,7 +1,5 @@
 #包名
 from conf.module import poco
-
-
 class E_app():
     master=("com.pointone.buddyglobal.debug")  # mastae测试包
     alpha=("com.pointone.buddyglobal.alpha")  # alpha测试包
